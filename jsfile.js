@@ -1,15 +1,18 @@
 const container = document.querySelector('#container');
-container.setAttribute('class', 'grid');
-
 
 let div;
-for(let i=0; i < 56; i++) {
+for(let i=0; i < 256; i++) {
     div = document.createElement('div');
-    container.appendChild(div);
+    container.appendChild(div); //creates and appends div to #container div
+    div.setAttribute('class', 'grid') //adds class 'grid' to each div
+    div.addEventListener('mouseenter', () => {
+        event.target.style.backgroundColor = 'black'
+    } //colors the square div black  when hovered
+    )   
 };
 
-container.style.display =  'grid';
-container.style.gridGap = '50px 50px';
-container.style.borderTop = '1px solid black';
-container.style.borderLeft = '1px solid black';
-container.style.gridTemplateColumns = '50px 50px 50px 50px 50px 50px 50px 50px 50px';
+function reset() {
+    div.style.backgroundColor = 'white';
+}
+
+

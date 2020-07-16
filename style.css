@@ -1,0 +1,21 @@
+#container {
+    height: auto;
+    width: auto;
+    display: inline-grid;
+    border: 1px solid black;
+    grid-template-columns: repeat(16, 30px);
+    position: absolute;
+    transform:translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}   
+
+.grid {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    /* border-top: 1px solid black;
+    border-right: 1px solid black; */
+}
