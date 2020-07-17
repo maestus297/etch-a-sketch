@@ -12,7 +12,21 @@ for(let i=0; i < 256; i++) {
 };
 
 function reset() {
-    div.style.backgroundColor = 'white';
+    for (i=1; i<=256; i++) {
+        const x = document.getElementsByTagName('div')[i];
+        x.style.backgroundColor = 'white';
+    }
 }
 
+
+for(i=0, i<2, i++) {
+    btn = 
+}
+
+
+let btn; // = document.getElementsByTagName('button')[0];
+btn.classList.add('body');
+
+const body = document.getElementsByTagName('div')[0];
+body.classList.add('body')
 
