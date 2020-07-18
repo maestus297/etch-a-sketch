@@ -1,6 +1,10 @@
-.body {
-    display: block;
-    align-items: ; 
+.btn {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 5%;
+  left: 50%;
 }
 
 #container {
@@ -21,6 +25,5 @@
     padding-right: 15px;
     padding-bottom: 15px;
     text-align: center;
-    /* border-top: 1px solid black;
-    border-right: 1px solid black; */
+
 }
